@@ -3,9 +3,7 @@
 Aplikacja desktopowa napisana w **Pythonie** przy użyciu biblioteki **PyQt6**, służąca do eksploracyjnej analizy danych dotyczących udarów mózgu. Program umożliwia wczytywanie danych z plików **CSV** oraz baz **SQLite**, filtrowanie rekordów, generowanie statystyk opisowych oraz wizualizację danych za pomocą wykresów.
 
 ## Autor
-- **Imię i Nazwisko**: [Twoje Imię i Nazwisko]
-- **Kierunek**: [Nazwa Kierunku]
-- **Grupa**: [Numer Grupy]
+- **Imię i Nazwisko**: Ryszard Wojciechowicz
 
 ## Funkcjonalności
 - Wczytywanie danych z pliku `healthcare-dataset-stroke-data.csv` lub bazy `healthcare.db`.
@@ -63,4 +61,4 @@ Aplikacja desktopowa napisana w **Pythonie** przy użyciu biblioteki **PyQt6**, 
 - `README.md` – niniejsza dokumentacja.
 
 ---
-*Projekt przygotowany na zaliczenie przedmiotu [Nazwa Przedmiotu].*
+*Projekt przygotowany na zaliczenie semestru
