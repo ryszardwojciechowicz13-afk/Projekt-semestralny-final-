@@ -463,7 +463,7 @@ class MainWindow(QMainWindow):  # Główne okno aplikacji
         self.table.setHorizontalHeaderLabels(headers)
 
         # Ograniczenie do 500 wierszy dla płynności interfejsu
-        display_df = df.head(500)
+        display_df = df.head(5000)
         self.table.setRowCount(len(display_df))
 
         for r_i in range(len(display_df)):
@@ -615,17 +615,6 @@ class MainWindow(QMainWindow):  # Główne okno aplikacji
             else:
                 self.error("Brak danych do wykresu pudełkowego.")
 
-        elif plot_type == "Korelacja: X vs Y":
-            col_x = self.cmb_col_x.currentText()
-            col_y = self.cmb_col_y.currentText()
-            
-            if not col_x or not col_y:
-                self.error("Wybierz kolumny dla osi X i Y.")
-                return
-            
-            if col_x == col_y:
-                self.error("Oś X i Oś Y muszą się od siebie różnić. Wybierz inne kolumny.")
-                return
             
             # Pobieramy dane i usuwamy puste wartości
             temp_df = df[[col_x, col_y]].dropna()
